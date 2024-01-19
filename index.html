@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            /* background: linear-gradient(to bottom, #ff9a9e, #fad0c4); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .search-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .search-box {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #e74c3c;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #d35400;
+            margin: 5px 0;
+        }
+
+        .temp {
+            font-size: 2em;
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Buscar ciudad..." id="searchInput">
+    </div>
+    <div class="container">
+        <h1>App del Clima</h1>
+        <h2>Ciudad: <span class="city"></span></h2>
+        <h2><span class="temp"></span></h2>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
